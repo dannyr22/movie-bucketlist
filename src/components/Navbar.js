@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
+    <nav>
       <h1>Movie BucketList</h1>
       <ul className="nav">
         <li>Home</li>
@@ -10,7 +10,7 @@ const Navbar = () => {
         <li>Contact Us</li>
         <li>Recommend a Movie</li>
       </ul>
-    </div>
+    </nav>
   )
 }
 
