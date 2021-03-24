@@ -5,7 +5,7 @@ import MovieDetails from './MovieDetails'
 
 const MovieList = () => {
   const { movies } = useContext(MovieContext)
-  return (
+  return movies.length ? (
     <div>
       <ul className="movielist">
         {movies.map(movie => <MovieDetails movie={movie} key={movie.id}/>
@@ -13,6 +13,8 @@ const MovieList = () => {
       </ul>
       <MovieForm />
     </div>
+  ) : (
+      <div>There are no moives :( </div>
   )
 }
 

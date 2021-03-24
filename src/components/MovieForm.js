@@ -17,8 +17,8 @@ const MovieForm = () => {
   return (
     <div>
       <form onSubmit={movieSubmitHandler}>
-        <input type="text" value={title} placeholder="movie title" onChange={(e) => setTitle(e.target.value) }/>
-        <input type="text" value={director} placeholder="director" onChange={(e) => setDirector(e.target.value)} />
+        <input type="text" value={title} placeholder="movie title" required onChange={(e) => setTitle(e.target.value) }/>
+        <input type="text" value={director} placeholder="director" required onChange={(e) => setDirector(e.target.value)} />
         <input type="submit" value="add movie"/>
       </form>
     </div>
