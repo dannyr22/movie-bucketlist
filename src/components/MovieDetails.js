@@ -1,8 +1,12 @@
-import React from 'react'
+import { useContext } from 'react'
+import { MovieContext } from '../contexts/MovieContext'
 
-const MovieDetails = ({movie}) => {
+const MovieDetails = ({ movie }) => {
+  
+  const { deleteMovie } = useContext(MovieContext)
+
   return (
-    <li>
+    <li onClick={() => deleteMovie(movie.id)}>
       <div>{movie.title}</div>
       <div>{movie.director}</div>
     </li>

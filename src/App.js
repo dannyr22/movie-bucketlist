@@ -1,3 +1,4 @@
+
 import MovieList from "./components/MovieList";
 import Navbar from "./components/Navbar";
 import MovieContextProvider from "./contexts/MovieContext";
