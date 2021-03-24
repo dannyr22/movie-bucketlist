@@ -1,5 +1,6 @@
 import MovieList from "./components/MovieList";
 import Navbar from "./components/Navbar";
+import './styles/app.scss'
 
 function App() {
   return (
