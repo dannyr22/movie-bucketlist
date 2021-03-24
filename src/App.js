@@ -1,12 +1,15 @@
 import MovieList from "./components/MovieList";
 import Navbar from "./components/Navbar";
+import MovieContextProvider from "./contexts/MovieContext";
 import './styles/app.scss'
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <MovieList />
+      <MovieContextProvider>
+        <Navbar />
+        <MovieList />
+      </MovieContextProvider>
     </div>
   );
 }
