@@ -6,7 +6,7 @@ const Navbar = () => {
   const {movies} = useContext(MovieContext)
   return (
     <nav>
-      <h1>Movies to watch before you die</h1>
+      <h1>Movies To Watch Before You Die</h1>
       <ul className="nav">
         <li>Home</li>
         <li>About</li>
