@@ -1,0 +1,10 @@
+.movie-details {
+  background-color: rgb(49, 49, 201);
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: line-through;
+  }
+}

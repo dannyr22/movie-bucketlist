@@ -20,9 +20,9 @@ const MovieForm = () => {
   return (
     <div>
       <form onSubmit={movieSubmitHandler}>
-        <input type="text" value={title} placeholder="movie title" required onChange={(e) => setTitle(e.target.value) }/>
-        <input type="text" value={director} placeholder="director" required onChange={(e) => setDirector(e.target.value)} />
-        <input type="submit" value="add movie"/>
+        <input type="text" id="title" value={title} placeholder="Movie Title" required onChange={(e) => setTitle(e.target.value) }/>
+        <input type="text" id="director" value={director} placeholder="Director" required onChange={(e) => setDirector(e.target.value)} />
+        <input type="submit" value="Add Movie"/>
       </form>
     </div>
   )

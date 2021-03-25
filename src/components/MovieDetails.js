@@ -6,7 +6,7 @@ const MovieDetails = ({ movie }) => {
   const { dispatch } = useContext(MovieContext)
 
   return (
-    <li onClick={() => dispatch({type: 'DELETE_MOVIE', id: movie.id})}>
+    <li className="movie-details" onClick={() => dispatch({type: 'DELETE_MOVIE', id: movie.id})}>
       <div>{movie.title}</div>
       <div>{movie.director}</div>
     </li>
