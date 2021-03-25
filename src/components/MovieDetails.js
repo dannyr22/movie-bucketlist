@@ -3,10 +3,10 @@ import { MovieContext } from '../contexts/MovieContext'
 
 const MovieDetails = ({ movie }) => {
   
-  const { deleteMovie } = useContext(MovieContext)
+  const { dispatch } = useContext(MovieContext)
 
   return (
-    <li onClick={() => deleteMovie(movie.id)}>
+    <li onClick={() => dispatch({type: 'DELETE_MOVIE', id: movie.id})}>
       <div>{movie.title}</div>
       <div>{movie.director}</div>
     </li>
