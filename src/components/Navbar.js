@@ -11,7 +11,6 @@ const Navbar = () => {
         <li>Home</li>
         <li>About</li>
         <li>Contact Us</li>
-        <li>Recommend a Movie</li>
       </ul>
       <div>You have {movies.length} movies left to watch</div>
     </nav>
